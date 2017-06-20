@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+         <meta charset="UTF-8">
+    <title>Portfolio site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,100" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <div class="col-md-2">
+            <img class= "img-responsive logo" src="images/udacity-logo.jpg" alt="logo">
+        </div>
+        <div class="col-md-10 text-right text-uppercase">
+          <h1>Haritha Rayakota</h1>
+          <h3>Front-end Ninja</h3>
+        </div>
+      </header>
+      <section class="row">
+        <div class="col-md-12 mainpic">
+          <img class= "img-responsive" src="images/main_pic_mini.jpg" alt="main_pic">
+        </div>
+      </section>
+      <section class="row title">
+        <div class="col-md-12 text-uppercase">
+          <h2>Featured Work</h2>
+        </div>
+      </section>
+      <div class="row text-center content ">
+        <div class="col-md-4">
+          <img class="img-responsive img-center" src="images/interactive-resume_small.jpg" data-toggle="modal" data-target="#resume-modal" width="360" height="243">
+          <h3>Interactive Resume</h3>
+          <p><a href="https://github.com/haritha0704/frontend-nanodegree-resume" target="_blank">Link to the project</a>          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive img-center"src="images/arcade-game_small.jpg" alt="Arcade Game" data-toggle="modal" data-target="#game-modal" width="360" height="243">
+          <h3>Arcade Game</h3>
+          <p><a href="https://github.com/haritha0704/frontend-nanodegree-arcade-game" target="_blank">Link to the project</a>
+          </p>
+        </div>
+    
+        <div class="col-md-4">
+          <img class="img-responsive img-center" src="images/website-optimization_pizza_small.jpg" alt="Website Optimization" data-toggle="modal" data-target="#optimize-modal" width="360" height="243">
+          <h3>Website Optimization</h3>
+          <p> <a href="https://github.com/haritha0704/frontend-nanodegree-mobile-portfolio" target="_blank">Link to the project
+          </a></p>
+        </div>
+      </div>
+      <div class="row text-center">
+      
+        <div class="col-md-4">
+          <img class="img-responsive img-center" src="images/neighborhood-map_small.jpg" alt="NeighbourHood Map" data-toggle="modal" data-target="#map-modal" width="360" height="243">
+          <h3>NeighbourHood Map</h3>
+          <p> <a href="https://github.com/haritha0704/neighbourhood-map" target="_blank">Link to the project</a></p>
+        </div>
+ 
+         <div class="col-md-4">
+          <img class="img-responsive img-center" src="images/feedreader-testing_small.jpg" alt="Feedreader Testing" data-toggle="modal" data-target="#testing-modal" width="360" height="243">
+          <h3>Feedreader Testing</h3>
+          <p>  <a href="https://github.com/haritha0704/frontend-nanodegree-feedreader" target="_blank">Link to the project</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+     <div class="modal fade" id="resume-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Interactive Resume</h4>
+                </div>
+                <div class="modal-body">
+                  <img class="img-responsive img-center" src="images/interactive-resume_small.jpg" alt="Website Optimization">
+                         <hr>
+                            <p>This project is the second project of the Udacity Front-end Nonodegree Program. It is a simple one page interactive resume featuring a Google Map of the places I have lived, went to school, and worked.</p>
+        <p>This project was built using a javascript helper to layout the structure of the page.
+        </p>
+      
+        <p><a href="https://github.com/haritha0704/frontend-nanodegree-resume" target="_blank">Source Code</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="game-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Classic Arcade Game</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive img-center" src="images/arcade-game_small.jpg" alt="Arcade Game">
+                         <hr>
+        <p>This is a difficult version of the classic arcade game Frogger.
+        </p>
+      
+        <p><a href="https://github.com/haritha0704/frontend-nanodegree-arcade-game" target="_blank">Source Code</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="optimize-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Website Optimization</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive img-center" src="images/website-optimization_pizza_small.jpg" alt="Website Optimization">
+                         <hr>
+        <p>The purpose of this project is to take a site that loads very poorly and optimize it to over 60 frames per second.</p>
+      
+        <p><a href="https://github.com/haritha0704/frontend-nanodegree-mobile-portfolio" target="_blank">Source Code</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <div class="modal fade" id="map-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Neighborhood Map</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive img-center" src="images/neighborhood-map_small.jpg" alt="NeighbourHood Map" >
+                  <hr>
+        <p>This application is an interactive map of Omaha NE with locations(resturants) that I am interested in marked on the map. When one of the locations are clicked on a popup window will display additional information about that resturants including their  rating  from Foursquare.</p>
+        <p>There is also a completely integrated instant search feature to allow the user to search through the locations marked on the map.</p>
+         <p><a href="https://github.com/haritha0704/neighbourhood-map" target="_blank">Source Code</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <div class="modal fade" id="testing-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Feedreader Testing</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive img-center" src="images/feedreader-testing_small.jpg" alt="Feedreader Testing">
+                     <hr>
+        <p>This project uses jasmine to test the functionality of a feed reader website.</p>
+  
+        <p><a href="https://github.com/haritha0704/frontend-nanodegree-feedreader" target="_blank">Source Code</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
